@@ -3,44 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T1S Tuition</title>
+    <title>Luke Zeng </title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <header>
-        <h1 id="main-heading">T1S Tuition</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1 id="main-heading">Luke Zeng</h1>
         <button id="change-text-btn">Learn More</button>
     </header>
     <main>
-        <section id="about">
-            <h2>About T1S Tuition</h2>
-            <p>Welcome to T1S Tuition, where we provide top-notch tutoring services for students of all ages. Our experienced tutors are dedicated to helping students achieve their academic goals.</p>
+        <section id="tabs">
+            <div class="tab-menu">
+                <button class="tab-link" data-tab="education">Education</button>
+                <button class="tab-link" data-tab="hobbies">Hobbies</button>
+                <button class="tab-link" data-tab="projects">Projects</button> 
+                <button class="tab-link" data-tab="secret">Secret</button>
+            </div>
+            <div class="tab-content" id="education">
+                <h2>Education</h2>
+                <p>I went to Caringbah and UNSW</p>
+                
+            </div>
+            <div class="tab-content" id="experience">
+                <h2>Experience</h2>
+                <p>Dr Du. Education <br><br/>UNSW Maths Drop-In Centre</p>
+            </div>
+            <div class="tab-content" id="hobbies">
+                <h2>Hobbies</h2>
+                <p>Soccer, Programming, Solving Integrals</p>
+            </div>
+            <div class="tab-content" id="projects">
+                <h2>Projects</h2>
+                <p>Back-end comp1531, sed in python</p>
+            </div>
+            <div class="tab-content" id="secret">
+                <h2>Secret</h2>
+                <p id="secret-content" style="display: none;">hehehe</p>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
+        <section id="contact"> 
             <form id="contact-form">
+                Contact Me: <br>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
+                <br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
+                <br>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
+                <input type="message" name="message" required></textarea>
+                <br>
+                <button type="submit" class="submit">Send</button>
             </form>
+            
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 T1S Tuition</p>
+        <p>&copy; Meowfriend</p>
     </footer>
     <script src="app.js"></script>
 </body>
