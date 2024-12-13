@@ -57,46 +57,8 @@ header {
   color: #ffcc00;
 }
 
-#change-text-btn {
-  background: #4CAF50;
-  color: white;
-  font-family: 'Courier New', Courier, monospace, sans-serif;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: bold;
-  border: none;
-}
-
-.tab-menu {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 20px;
-}
-
-.tab-link {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
 .submit {
   background: #2575fc;
-}
-.tab-link.active {
-  background-color: #333;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
 }
 
 #form-section {
@@ -169,19 +131,100 @@ textarea::placeholder {
 a:visited {
   color: white;
 }
+
+a {
+  color: white;
+}
+
 a i {
   margin-left: 10px;
   font-size: 40px;
+  color: white;
 }
 
-.linkedin-header {
+.email-link {
+  color: white;
+}
+
+.linkedin-header i {
   position: absolute;
   bottom: 10px;
   right: 20px;
-  font-size: 24px;
-    color: white;
-    margin-left: 20px; /* Adds space between the nav and the icon */
-    transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 40px !important;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.github-header i {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+  font-size: 40px !important;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.email-icon i {
+  position: absolute;
+  bottom: 10px;
+  right: 127px;
+  font-size: 40px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#home {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between text and image */
+  height: 700px; /* Full viewport height */
+  background: black; /* Match your design */
+  color: white;
+}
+
+.home-photo {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  /* font-size: 500px; */
+}
+
+.home-photo img {
+  height: 600px;
+}
+
+.github-header i:hover {
+  transform: scale(1.2);
+  color: pink;
+}
+
+.linkedin-header i:hover {
+  transform: scale(1.2);
+  color: pink;
+}
+
+.email-icon i:hover {
+  transform: scale(1.2);
+  color: pink;
+}
+
+.sliding-words {
+  display: inline-block;
+  overflow: hidden;
+  height: 1.2em;
+  line-height: 1.2em;
+}
+
+.sliding-words span {
+  display: block;
+  animation: slideDown 6s infinite;
+}
+
+@keyframes slideDown {
+  0%, 20% { transform: translateY(0); }
+  25%, 95% { transform: translateY(-100%); }
+  100% { transform: translateY(-200%); }
+}
+
+
 
 

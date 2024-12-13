@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="app.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
-
 </head>
 <body>
     <header>
-        <h1 id="main-heading">Luke Zeng</h1>
+        <h1 id="main-heading">Hi, I'm Luke Zeng</h1>
+        <div class="sliding-words">
+            <span>Adv Math/Computer Science Student</span>
+            <span>Located In Sydney, Australia</span>
+        </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -24,62 +26,63 @@
         <a href="https://au.linkedin.com/in/luke-zeng-439b43187" target="_blank" aria-label="LinkedIn" class="linkedin-header">
             <i class="fab fa-linkedin"></i>
         </a>
+        <a href="https://github.com/lukezeng123/lukezeng123.github.io" target="_blank" class="github-header">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:luke.zeng@student.unsw.edu.au" target="_blank" class="email-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+        
     </header>
     
     <main>
         <section id="home">
-            <h2>Home</h2>
-            <p>Hi, Welcome to Luke's personal website!</p>
-            <p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p>
-        </section>
+            <div>
+              <h2>Home</h2>
+              <p>Hi there, welcome to my personal website!<br>
+                I decided to make a webstite because I thought it would be fun to do.<br>
+                I'm struggling in computer science right now and at this rate I'm going <br>
+                to become homeless. Everyday is a fight against the world. <br>
+                Anyways, I dabble in speculative finance, teach high school mathematics and <br>
+                play Brawl Stars in my free time.
+              </p>
+            </div>
+            <div class="home-photo">
+              <img src="photo-of-me.jpg" alt="Photo of Luke">
+            </div>
+          </section>
+          
         <section id="about">
             <h2>About</h2>
-            <p>Hi, Welcome to Luke's personal website!</p> <p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p>
+            <p>Hi, Welcome to Luke's personal website!</p> 
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p>
+            <p>Hi, Welcome to Luke's personal website!</p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
             <p>Get in touch through my socials :&#41;&#41;</p>
-            <div class="social-icons">
-                LinkedIn:   
-                <a href="https://au.linkedin.com/in/luke-zeng-439b43187" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+            <!-- LinkedIn -->
+            <div class="social-link">
+                <span>LinkedIn:</span>
+                <a href="https://www.linkedin.com/in/luke-zeng-439b43187" target="_blank" aria-label="LinkedIn">luke-zeng</a>
                 </a>
-                    
+            </div>
+            <!-- Email -->
+            <div class="email-link">
+                <span>Email me at:</span>
+                <a href="mailto:luke.zeng@student.unsw.edu.au">luke.zeng@student.unsw.edu.au</a>
+            </div>
+            <!-- Github -->
+            <div>
+                <span>Github:</span>
+                <a href="https://github.com/lukezeng123/lukezeng123.github.io" target="_blank">lukezeng123</a>
             </div>
         </section>
-        <!-- <section id="tabs">
-            <div class="tab-menu">
-                <button class="tab-link" data-tab="education">Education</button>
-                <button class="tab-link" data-tab="hobbies">Hobbies</button>
-                <button class="tab-link" data-tab="projects">Projects</button> 
-                <button class="tab-link" data-tab="secret">Secret</button>
-            </div>
-            <div class="tab-content" id="education">
-                <h2>Education</h2>
-                <p>I went to Caringbah and UNSW</p>
-                
-            </div>
-            <div class="tab-content" id="experience">
-                <h2>Experience</h2>
-                <p>Dr Du. Education <br><br/>UNSW Maths Drop-In Centre</p>
-            </div>
-            <div class="tab-content" id="hobbies">
-                <h2>Hobbies</h2>
-                <p>Soccer, Programming, Solving Integrals</p>
-            </div>
-            <div class="tab-content" id="projects">
-                <h2>Projects</h2>
-                <p>Back-end comp1531, sed in python</p>
-            </div>
-            <div class="tab-content" id="secret">
-                <h2>Secret</h2>
-                <p id="secret-content" style="display: none;">hehehe</p>
-            </div>
-        </section> -->
+        <br><br/>
+        <h3>Send me a message!</h3>
+
         <section id="form-section">
             <form
                 action="https://formspree.io/f/mvgonlgj"
@@ -99,7 +102,7 @@
         </section> 
     </main>
     <footer id="foot">
-        <p>&copy; Meowfriend</p>
+        <p>&copy; lukezeng123</p>
     </footer>
     <script src="app.js"></script>
 </body>
