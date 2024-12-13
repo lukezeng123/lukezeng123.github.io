@@ -5,14 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luke Zeng </title>
     <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+
 </head>
 <body>
     <header>
         <h1 id="main-heading">Luke Zeng</h1>
-        <button id="change-text-btn">Learn More</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="https://au.linkedin.com/in/luke-zeng-439b43187" target="_blank" aria-label="LinkedIn" class="linkedin-header">
+            <i class="fab fa-linkedin"></i>
+        </a>
     </header>
+    
     <main>
-        <section id="tabs">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Hi, Welcome to Luke's personal website!</p>
+            <p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hi, Welcome to Luke's personal website!</p> <p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p><p>Hi, Welcome to Luke's personal website!</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch through my socials :&#41;&#41;</p>
+            <div class="social-icons">
+                LinkedIn:   
+                <a href="https://au.linkedin.com/in/luke-zeng-439b43187" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                    
+            </div>
+        </section>
+        <!-- <section id="tabs">
             <div class="tab-menu">
                 <button class="tab-link" data-tab="education">Education</button>
                 <button class="tab-link" data-tab="hobbies">Hobbies</button>
@@ -40,25 +79,26 @@
                 <h2>Secret</h2>
                 <p id="secret-content" style="display: none;">hehehe</p>
             </div>
-        </section>
-        <section id="contact"> 
-            <form id="contact-form">
-                Contact Me: <br>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="message">Message:</label>
-                <input type="message" name="message" required></textarea>
-                <br>
-                <button type="submit" class="submit">Send</button>
+        </section> -->
+        <section id="form-section">
+            <form
+                action="https://formspree.io/f/mvgonlgj"
+                method="POST"
+                >
+                <label>
+                    Your email:
+                    <input type="email" placeholder="e.g lukezeng123@example.com" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message" placeholder="I'm your biggest fan!..."></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
             </form>
-            
-        </section>
+        </section> 
     </main>
-    <footer>
+    <footer id="foot">
         <p>&copy; Meowfriend</p>
     </footer>
     <script src="app.js"></script>
