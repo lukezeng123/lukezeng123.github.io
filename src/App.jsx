@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -15,20 +15,19 @@ function App() {
       {/* Header (always visible) */}
       <Header />
 
-      {/* Main content: switched by route */}
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
 
-      {/* Footer (always visible) */}
       <Footer />
     </div>
-    // <>Welcome to My Personal Site!</>
+    
   )
 }
 

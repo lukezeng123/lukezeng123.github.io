@@ -55,7 +55,7 @@ export default function Header() {
               animate="visible"
             >
               {[
-                { name: "Home", to: "/" },
+                { name: "Home", to: "/home" },
                 { name: "About", to: "/about" },
                 { name: "Projects", to: "/projects" },
                 { name: "Contact", to: "/contact" },
