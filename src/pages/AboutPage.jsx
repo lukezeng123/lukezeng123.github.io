@@ -1,4 +1,5 @@
 import React from "react";
+import ME from './ME.jpg'
 
 export default function AboutPage() {
   return (<div>
