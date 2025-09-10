@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
+import SteamBotDemo from "./pages/SteamBotDemo";
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/steam-bot" element={<SteamBotDemo />} />
         </Routes>
       </main>
 
